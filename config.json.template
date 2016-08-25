@@ -1,0 +1,14 @@
+{
+  "clientID": "your clientID",
+  "clientSecret": "your clientSecret",
+  "callbackURL": "your callbackURL",
+  "loginURL": "your loginURL",
+  "listenPort": "your listenPort",
+  "email": "your facebook email",
+  "password": "your facebook password",
+  "user_id": "target facebook id",
+  "token": "your slack token",
+  "channel": "notice channel",
+  "username": "notice user",
+  "icon_url": "user icon"
+}
