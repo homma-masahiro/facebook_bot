@@ -1,0 +1,17 @@
+export const config = {
+  facebook: {
+    clientID:     'your facebook clientID',
+    clientSecret: 'your facebook clientSecret',
+    user_id:      'facebook user id'
+  },
+  slack: {
+    token:    'your slack token',
+    channel:  'notice channel',
+    username: 'notice user name',
+    icon_url: 'notice user icon'
+  },
+  repeate: {
+    interval: 'repeate interval',
+    unit:     'repeate unit'
+  }
+};

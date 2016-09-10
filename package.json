@@ -1,6 +1,6 @@
 {
   "name": "facebook_bot",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Facebookの投稿をSlackに通知するBOT",
   "main": "index.js",
   "scripts": {
