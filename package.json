@@ -1,11 +1,10 @@
 {
   "name": "facebook_bot",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Facebookの投稿をSlackに通知するBOT",
   "main": "index.js",
   "scripts": {
-    "start": "./seleniumd start && ./forever start facebook_oauth_server.js",
-    "stop": "./seleniumd stop && ./forever stop facebook_oauth_server.js"
+    "start": "./node_modules/.bin/babel-node ./facebook_bot.js"
   },
   "repository": {
     "type": "git",
@@ -18,22 +17,9 @@
     "babel-polyfill": "^6.7.2",
     "babel-preset-es2015": "^6.9.0",
     "bluebird": "^3.4.0",
-    "body-parser": "^1.13.2",
-    "build-url": "^1.0.9",
-    "connect-ensure-login": "^0.1.1",
-    "cookie-parser": "^1.3.5",
-    "ejs": "^2.3.3",
-    "express": "^4.13.1",
-    "express-session": "^1.11.3",
-    "forever": "^0.15.2",
+    "facebook-node-sdk": "^0.2.0",
     "moment": "^2.13.0",
-    "morgan": "^1.6.1",
-    "passport": "^0.2.2",
-    "passport-facebook": "^2.0.0",
-    "request": "^2.72.0",
-    "selenium-standalone": "^5.1.0",
-    "slack-api": "^0.1.11",
-    "webdriverio": "^4.0.5"
+    "slack-api": "^0.1.11"
   },
   "author": "MSHR",
   "license": "ISC"

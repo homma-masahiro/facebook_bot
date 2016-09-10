@@ -8,9 +8,6 @@ async function main() {
   try {
     let config  = JSON.parse(fs.readFileSync('./config.json', 'utf8'));
 
-    let facebookBot = new FacebookBot(config);
-    let accessToken = await facebookBot.requestAccessToken();
-
     let now = moment();
     let since = now.clone()
           .add(-1, 'hours')
@@ -23,10 +20,11 @@ async function main() {
           .seconds(0)
           .milliseconds(0)
           .unix();
-    let response = await facebookBot.requestGourmetClubFeed(since, until);
+
+    let res = await new FacebookBot(config).requestFeed(since, until);
 
     let messages = [];
-    response.body.feed.data.forEach(jsonFeed => {
+    res.feed.data.forEach(jsonFeed => {
       messages.push(new FacebookFeed(jsonFeed).json2message());
     });
 
