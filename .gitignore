@@ -1,4 +1,4 @@
-node_modules
-config.js
+src/node_modules
+src/config.js
 *.log
 *.pid

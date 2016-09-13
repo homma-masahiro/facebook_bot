@@ -1,0 +1,9 @@
+facebook_bot:
+  build: ./
+  cap_add:
+    - SYS_TIME
+  extra_hosts:
+    - "ntp.nict.jp:192.168.2.3"
+  volumes:
+    - ./src:/facebook_bot
+  command: ./run
