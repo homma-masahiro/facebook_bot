@@ -1,5 +1,4 @@
 #!/bin/sh
 
 ntpdate ntp.nict.jp
-npm install
 npm start

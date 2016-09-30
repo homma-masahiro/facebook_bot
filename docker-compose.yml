@@ -6,4 +6,5 @@ facebook_bot:
     - "ntp.nict.jp:192.168.2.3"
   volumes:
     - ./src:/facebook_bot
+    - /facebook_bot/node_modules
   command: ./run

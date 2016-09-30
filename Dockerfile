@@ -9,3 +9,4 @@ RUN npm update -g npm
 RUN mkdir /facebook_bot
 WORKDIR /facebook_bot
 COPY src/package.json .
+RUN npm install
